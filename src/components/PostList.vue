@@ -1,6 +1,5 @@
 <template>
    <div>
-       <button @click="getPosts"> Load Posts </button>
        <div v-for="post in posts" :key="post.id">
             <PostDetail :id= post.id :title= post.title :body= post.body />
        </div>

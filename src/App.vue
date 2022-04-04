@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <h1> Hello World</h1>
+  <div class="container">
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> --> 
+    <PostList />
+  </div>
 </template>
 
 <script>
 
-import HeaderOne from './components/Header'
+
+import PostList from './components/PostList.vue'
+
 
 export default {
-  name: 'App',
-  components: HeaderOne
+    name: "App",
+    
+    components: { PostList }
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-
+    <HeaderComp title= "Top 100 Quotes" />
     <PostList />
   </div>
 </template>
@@ -9,12 +9,16 @@
 
 
 import PostList from './components/PostList.vue'
+import HeaderComp from './components/HeaderComp.vue'
 
 
 export default {
     name: "App",
     
-    components: { PostList }
+    components: { 
+      HeaderComp, 
+      PostList 
+    }
 }
 </script>
 

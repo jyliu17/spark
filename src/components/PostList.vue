@@ -2,14 +2,16 @@
    <div>
        <button @click="getPosts"> Load Posts </button>
        <div v-for="post in posts" :key="post.id">
-           <h4>{{ post.id }}. {{post.title}}</h4>
-           <p> {{post.body}} </p>
+            <PostDetail :id= post.id :title= post.title :body= post.body />
        </div>
+   
+
    </div>
 </template>
 
 <script>
 import axios from "axios"
+import PostDetail from './PostDetail.vue'
 
 
 export default {
@@ -30,7 +32,11 @@ export default {
                 console.log(error)
             })
         }
-    }
+    },
+    created(){
+            this.getPosts()
+    },
+    components: { PostDetail }
 }
 
 </script>

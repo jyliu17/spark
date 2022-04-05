@@ -3,8 +3,6 @@
 ## Project setup
 ```
 npm install
-
-npm install --save bootstrap bootstrap-vue-3
 ```
 
 ### Compiles and hot-reloads for development

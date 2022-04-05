@@ -1,4 +1,4 @@
-<template class="card">
+<template>
 
 <div class="card">
   <b-card

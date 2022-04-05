@@ -1,6 +1,6 @@
-<template>
+<template class="card">
 
-<div>
+<div class="card">
   <b-card
     title="Quote Title"
     img-src="https://picsum.photos/600/300/?image=25"
@@ -21,27 +21,20 @@
     
 </template>
 
-
-
-
-
-
 <script>
 export default {
     name: "PostDetail",
     props: ['id', 'title', 'body'],
 
-    created(){
-        console.log(this.id)
-    }
 }
 </script>
 
 <style scoped>
-    div {
-        display: flex;
+    .card {
+        display: flex-wrap;
+        flex-direction: center;
         justify-content: space-between;
-        align-items: center;
+        align-self: stretch;
         margin-bottom: 10px;
     }
 

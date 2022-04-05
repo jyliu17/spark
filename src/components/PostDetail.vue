@@ -14,7 +14,7 @@
     {{id}}. {{title}}
     </h3>
     <p>{{body}}</p>
-    <b-button href="#" variant="primary">Go somewhere</b-button>
+    <b-button href="#" variant="primary">Go To Top</b-button>
   </b-card>
  
 </div>
